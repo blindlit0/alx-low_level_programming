@@ -11,11 +11,12 @@ int main(void)
 
 	while (charSmall <= 'z')
 	{ putchar(charSmall);
-		charSmall++
+		charSmall++;
 	}
+	
 	while (charBig <= 'Z')
 	{ putchar(charBig);
-		charBig++
+		charBig++;
 	}
 
 	putchar('\n');
