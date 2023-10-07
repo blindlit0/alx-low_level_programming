@@ -13,7 +13,6 @@ int main(void)
 	{ putchar(charSmall);
 		charSmall++;
 	}
-	
 	while (charBig <= 'Z')
 	{ putchar(charBig);
 		charBig++;
