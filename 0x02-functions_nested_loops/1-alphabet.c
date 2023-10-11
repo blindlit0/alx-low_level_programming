@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * print_alphabets - Does Exactly as it says
+ * print_alphabet - Does Exactly as it says
  * Return: void
  */
-void print_alphabets(void)
+void print_alphabet(void)
 {
 	char letters;
 
