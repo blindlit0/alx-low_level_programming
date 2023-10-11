@@ -3,10 +3,10 @@
 
 /**
  *print_to_98 - print to ninety-eight
- *@n number to begin at
+ *@n: number to begin at
  *Return: 0 OR 1
 */
- void print_to_98(int n)
+void print_to_98(int n)
 {
 
 while (n < 98)
