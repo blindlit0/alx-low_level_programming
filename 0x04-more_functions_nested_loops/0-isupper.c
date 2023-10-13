@@ -2,7 +2,7 @@
 /**
  *_isupper - Checks for uppercase character
  *@c: The character to be checked
- *Return: 1 (True - uppercase) OR 0 (False - lowecase)
+ *Return: 1 if uppercase OR 0 if lowecase
  */
 int _isupper(int c)
 {
