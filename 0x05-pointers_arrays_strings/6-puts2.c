@@ -5,15 +5,15 @@
  * Return: 0
  */
 
-void puts2(char *s)
+void puts2(char *str)
 {
 	int num;
 
-	for (num = 0; s[num] != '\0'; num++)
+	for (num = 0; str[num] != '\0'; num++)
 	{
 		if (num % 2 == 0)
 		{
-			_putchar(s[num]);
+			_putchar(str[num]);
 		}
 	}
 	_putchar('\n');

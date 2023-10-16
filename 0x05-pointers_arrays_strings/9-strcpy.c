@@ -2,7 +2,7 @@
 
 /**
  * *_strcpy - copies specific string to specific place
- * @dest: where to copy string to 
+ * @dest: where to copy string to
  * @src: where to copy string from
  * Return: string
  */
