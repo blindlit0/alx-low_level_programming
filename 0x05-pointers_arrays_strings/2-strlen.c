@@ -2,7 +2,7 @@
 
 /**
  * _strlen - counts the length of a string and returns value
- * @s - string
+ * @s: string
  * Return: Length of string
  */
 
@@ -13,4 +13,4 @@ int _strlen(char *s)
 	for (string = 0; s[string] != '\0' ; string++)
 
 	return (string);
-}	
+}

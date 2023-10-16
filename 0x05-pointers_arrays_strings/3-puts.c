@@ -2,7 +2,7 @@
 
 /**
  * _puts - prints astring followed by anew line
- * @*str - string
+ * @str: input string
  * Return: string
  */
 
@@ -12,7 +12,7 @@ void _puts(char *str)
 
 	string = *str;
 
-	return(string);
+	return (string);
 }
 
 
