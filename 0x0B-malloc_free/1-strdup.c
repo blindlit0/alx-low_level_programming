@@ -2,11 +2,12 @@
 #include <stdlib.h>
 
 /**
- * _strdup - function that returns a pointer to a newly allocated space in memory,
+ * _strdup - function that returns a pointer to a newly 
+ * allocated space in memory,
  * which contains a copy of the string given as a parameter.
  * @str: source string
- * Return: pointer to the duplicated string OR NULL if 
- * insufficient memory
+ * Return: pointer to the duplicated string OR
+ * NULL if insufficient memory
  */
 
 char *_strdup(char *str)
