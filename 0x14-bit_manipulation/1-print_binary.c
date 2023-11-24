@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _power - calculate (base and power)
  * @base: base of the exponet
@@ -10,7 +11,7 @@ unsigned long int _power(unsigned int base, unsigned int pow)
 {
 	unsigned long int num;
 	unsigned int i;
-	
+
 	num = 1;
 	for (i = 1; i <= pow; i++)
 	num *= base;
