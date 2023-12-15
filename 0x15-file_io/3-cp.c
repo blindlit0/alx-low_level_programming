@@ -4,28 +4,28 @@
 
 /**
  * check97 - checks for the correct number of arguments
- * @argc: number of argument
+ * @argc: number of arguments
+ *
  * Return: void
  */
-
 void check97(int argc)
 {
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-			exit(97);
+		exit(97);
 	}
 }
 
 /**
  * check98 - checks that file_from exists and can be read
  * @check: checks if true of false
- * @file: name of file
+ * @file: file_from name
  * @fd_from: file descriptor of file_from, or -1
  * @fd_to: file descriptor of file_to, or -1
+ *
  * Return: void
  */
-
 void check98(ssize_t check, char *file, int fd_from, int fd_to)
 {
 	if (check == -1)
@@ -40,15 +40,14 @@ void check98(ssize_t check, char *file, int fd_from, int fd_to)
 }
 
 /**
- * check99 - function that checks that file_to was created
- * and/or can be written to
- * @check: checks whether true of false
- * @file: name of file
+ * check99 - checks that file_to was created and/or can be written to
+ * @check: checks if true of false
+ * @file: file_to name
  * @fd_from: file descriptor of file_from, or -1
  * @fd_to: file descriptor of file_to, or -1
+ *
  * Return: void
  */
-
 void check99(ssize_t check, char *file, int fd_from, int fd_to)
 {
 	if (check == -1)
@@ -65,10 +64,10 @@ void check99(ssize_t check, char *file, int fd_from, int fd_to)
 /**
  * check100 - checks that file descriptors were closed properly
  * @check: checks if true or false
- * @fd: file description
+ * @fd: file descriptor
+ *
  * Return: void
  */
-
 void check100(int check, int fd)
 {
 	if (check == -1)
@@ -78,12 +77,12 @@ void check100(int check, int fd)
 	}
 }
 /**
- * main - function that copies the content of a file to another.
- * @argc: number of arguments passed.
- * @argv: array of pointers to arguments.
- * Return: 0 success
+ * main - opies the content of a file to another file.
+ * @argc: number of arguments passed
+ * @argv: array of pointers to the arguments
+ *
+ * Return: 0 on success
  */
-
 int main(int argc, char *argv[])
 {
 	int fd_from, fd_to, close_to, close_from;
@@ -105,7 +104,7 @@ int main(int argc, char *argv[])
 		lenw = write(fd_to, buffer, lenr);
 		if (lenw != lenr)
 			lenw = -1;
-		check99(lenw, argv[2], fd_from, fd_from, fd_to);
+		check99(lenw, argv[2], fd_from, fd_to);
 	}
 	close_to = close(fd_to);
 	close_from = close(fd_from);
