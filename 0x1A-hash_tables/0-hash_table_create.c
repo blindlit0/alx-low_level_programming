@@ -2,7 +2,7 @@
 
 /**
  * hash_table_create - Creates a hash table.
- * @size: Array size
+ * @size: The size of the array.
  * Return: If an error occurs - NULL.
  * Otherwise - a pointer to the new hash table.
  */
